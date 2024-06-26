@@ -1,40 +1,93 @@
+# DEX Swap (Custom_Swap_v2)
+
+## Introduction
+**DEX Swap** is a decentralized exchange platform designed to facilitate the swapping of tokens in a trustless and permissionless manner. Leveraging the power of Ethereum and automated market maker (AMM) technology, DEX Swap enables users to trade ERC-20 tokens directly from their wallets without the need for intermediaries.
+
+## Features
+- **Trustless Trading**: Conduct trades directly from your wallet without the need for a centralized exchange.
+- **Automated Market Maker**: Utilizes an AMM model for efficient and decentralized liquidity provision.
+- **Token Swaps**: Swap between two tokens using a simple and intuitive interface.
+- **Liquidity Pools**: Provide liquidity to earn fees from token swaps.
+- **Secure and Transparent**: Built on the Ethereum blockchain, ensuring security and transparency.
+- **User-Friendly Interface**: Clean and modern UI with easy navigation.
+
+## Technologies Used
+- **TypeScript**: Provides type safety and improved development experience for the project.
+- **Solidity**: Smart contract language used to implement the decentralized exchange logic on the Ethereum blockchain.
+- **Ethereum**: Blockchain platform used to deploy and interact with smart contracts.
+-**Hardhat**: Hardhat framework used for deployment of smart contracts.
+- **Thirdweb**: Simplifies the integration of Web3 functionality in the application.
+- **CSS**: Used for styling the application, ensuring a responsive and visually appealing interface.
+
+
 ## Getting Started
 
-Create a project using this example:
+### Prerequisites
+- **Node.js**: Ensure you have Node.js installed. You can download it from [here](https://nodejs.org/).
+- **MetaMask**: A crypto wallet and gateway to blockchain apps. Install it from [here](https://metamask.io/).
 
-```bash
-npx thirdweb create --template next-typescript-starter
-```
+### Installation
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/dex-swap.git
+   cd dex-swap
+   ```
 
-On `pages/_app.tsx`, you'll find our `ThirdwebProvider` wrapping your app, this is necessary for our [hooks](https://portal.thirdweb.com/react) and
-[UI Components](https://portal.thirdweb.com/ui-components) to work.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-## Environment Variables
+3. Set up environment variables:
+   Create a `.env` file in the root directory and add the following:
+   ```bash
+   NEXT_PUBLIC_TEMPLATE_CLIENT_ID=your_thirdweb_client_id
+   ```
 
-To run this project, you will need to add environment variables. Check the `.env.example` file for all the environment variables required and add it to `.env.local` file or set them up on your hosting provider.
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-## Deploy to IPFS
+5. Open your browser and navigate to `http://localhost:3000` to view the application.
 
-Deploy a copy of your application to IPFS using the following command:
+### Contract Deployment
 
-```bash
-yarn deploy
-```
+To deploy the smart contracts on Ethereum:
 
-## Learn More
+1. Configure your deployment script (e.g., using Hardhat or Truffle).
+2. Deploy the contracts to the Ethereum network.
+3. Update the contract addresses in your frontend application.
 
-To learn more about thirdweb and Next.js, take a look at the following resources:
+## Smart Contracts
 
-- [thirdweb React Documentation](https://docs.thirdweb.com/react) - learn about our React SDK.
-- [thirdweb TypeScript Documentation](https://docs.thirdweb.com/typescript) - learn about our JavaScript/TypeScript SDK.
-- [thirdweb Portal](https://docs.thirdweb.com) - check our guides and development resources.
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Templates](https://thirdweb.com/templates)
+The core smart contracts of DEX Swap are written in Solidity and deployed on the Ethereum blockchain. They manage the liquidity pools, token swaps, and fee distribution.
 
-You can check out [the thirdweb GitHub organization](https://github.com/thirdweb-dev) - your feedback and contributions are welcome!
+### Key Contracts
 
-## Join our Discord!
+- **DEX.sol**: Manages the overall functionality of the decentralized exchange.
+- Manages the liquidity pools and the automated market maker logic.
 
-For any questions, suggestions, join our discord at [https://discord.gg/thirdweb](https://discord.gg/thirdweb).
+- **Token.sol**: Represents the ERC-20 tokens used within the platform.
+
+## Usage
+
+1. **Connect Wallet**: Use MetaMask to connect your Ethereum wallet to the DEX Swap platform.
+2. **Swap Tokens**: Select the tokens you want to swap and execute the trade.
+3. **Provide Liquidity**: Add liquidity to the pool to earn a share of the trading fees.
+4. **Withdraw Liquidity**: Remove your liquidity from the pool at any time.
+
+## Contributing
+
+Contributions are welcome! Please follow these steps to contribute:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes and commit them (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Open a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

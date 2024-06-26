@@ -6,8 +6,8 @@ import SwapInput from "../components/SwapInput";
 
 const Home: NextPage = () => {
   // Contracts for the DEX and the token
-  const TOKEN_CONTRACT = "<YOUR_CONTRACT>";
-  const DEX_CONTRACT = "<YOUR_CONTRACT>";
+  const TOKEN_CONTRACT = "0x4c478D331Ad84C1D2D51e0954d77537055B97B95";
+  const DEX_CONTRACT = "0x8Bd896eA93b840cd7682dede2cca3401636D7f84";
 
   // SDK instance
   const sdk = useSDK();
@@ -123,14 +123,55 @@ const Home: NextPage = () => {
 
   return (
     <main className={styles.main}>
-      <div className={styles.container}>
+    <section className="bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg  text-gray-100">
+      <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between ">
+        <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
+          <h1 className="text-5xl font-bold leadi sm:text-6xl ">
+            Token
+            {""} <span className=" text-[#7765f3]">Marketplace</span>
+          </h1>
+          <p className="mt-6 mb-8 text-lg sm:mb-12">
+            Swap, earn, and build on the leading decentralized crypto trading
+            protocol.
+            <br className="hidden md:inline lg:hidden" />
+            turpis pulvinar, est scelerrisa ligua sem
+          </p>
+          <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
+            <a 
+              rel="noopener noreferrer"
+              href="#"
+              className="px-8 py-3 text-lg font-semibold rounded bg-[#7765f3] text-gray-900"
+              >
+                Get Start
+              </a>
+            <a rel="noopener noreferrer"
+              href="#"
+              className="px-8 py-3 text-lg font-semibold border rounded border-gray-100"
+              >
+                Swap ERC20
+              </a>
+          </div>
+          </div>
+
+        <div className=" flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+       
+          <div className={styles.container}>
+          <div className="bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg">
         <div style={{
+
           backgroundColor: "#111",
           padding: "2rem",
           borderRadius: "10px",
           minWidth: "500px",
+        
         }}>
-          <div 
+          <div style={{
+            display: "flex",
+            flexDirection: currentFrom === "native" ? "column" : "column-reverse",
+            alignItems: "center",
+            justifyContent: "center",
+            margin: "10px",
+          }}
             >
             <SwapInput
               current={currentFrom as string}
@@ -177,9 +218,19 @@ const Home: NextPage = () => {
             <p>Connect wallet to exchange.</p>
           )}
         </div>
+            </div>
+            </div>
+          <div>
+       
       </div>
+      </div>
+      </div>
+      </section>
+      
+      
     </main>
   );
+ 
 };
 
 export default Home;
