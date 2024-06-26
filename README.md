@@ -1,5 +1,7 @@
 # DEX Swap (Custom_Swap_v2)
 
+![alt text](https://github.com/Dhanraj30/Custom_Swap/blob/main/img/swap.png)
+
 ## Introduction
 **DEX Swap** is a decentralized exchange platform designed to facilitate the swapping of tokens in a trustless and permissionless manner. Leveraging the power of Ethereum and automated market maker (AMM) technology, DEX Swap enables users to trade ERC-20 tokens directly from their wallets without the need for intermediaries.
 
