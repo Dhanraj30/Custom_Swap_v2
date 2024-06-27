@@ -3,7 +3,7 @@ import styles from "../styles/Home.module.css";
 import { NextPage } from "next";
 import { useEffect, useState } from "react";
 import SwapInput from "../components/SwapInput";
-
+import { BackgroundBeams } from "../components/ui/background-beams";
 const Home: NextPage = () => {
   // Contracts for the DEX and the token
   const TOKEN_CONTRACT = "0x4c478D331Ad84C1D2D51e0954d77537055B97B95";
@@ -127,8 +127,8 @@ const Home: NextPage = () => {
       <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between ">
         <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
           <h1 className="text-5xl font-bold leadi sm:text-6xl ">
-            Token
-            {""} <span className=" text-[#7765f3]">Marketplace</span>
+            Decentralize
+            {""} <span className=" text-[#7765f3]">Exchange</span>
           </h1>
           <p className="mt-6 mb-8 text-lg sm:mb-12">
             Swap, earn, and build on the leading decentralized crypto trading
@@ -154,7 +154,7 @@ const Home: NextPage = () => {
           </div>
 
         <div className=" flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
-       
+        <BackgroundBeams />
           <div className={styles.container}>
           <div className="bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg">
         <div style={{
@@ -220,15 +220,19 @@ const Home: NextPage = () => {
         </div>
             </div>
             </div>
+            
           <div>
-       
+          
       </div>
       </div>
+      
       </div>
+     
       </section>
       
       
     </main>
+    
   );
  
 };
