@@ -4,6 +4,7 @@ import { NextPage } from "next";
 import { useEffect, useState } from "react";
 import SwapInput from "../components/SwapInput";
 import { BackgroundBeams } from "../components/ui/background-beams";
+import Link from "next/link"
 const Home: NextPage = () => {
   // Contracts for the DEX and the token
   const TOKEN_CONTRACT = "0x4c478D331Ad84C1D2D51e0954d77537055B97B95";
@@ -137,19 +138,19 @@ const Home: NextPage = () => {
             turpis pulvinar, est scelerrisa ligua sem
           </p>
           <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
-            <a 
+            <Link 
               rel="noopener noreferrer"
               href="#"
               className="px-8 py-3 text-lg font-semibold rounded bg-[#7765f3] text-gray-900"
               >
                 Get Start
-              </a>
-            <a rel="noopener noreferrer"
+              </Link>
+            <Link rel="noopener noreferrer"
               href="#"
               className="px-8 py-3 text-lg font-semibold border rounded border-gray-100"
               >
                 Swap ERC20
-              </a>
+              </Link>
           </div>
           </div>
 
