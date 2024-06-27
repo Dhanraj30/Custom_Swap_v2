@@ -18,7 +18,7 @@ export default function Navbar() {
 
 import { ConnectWallet } from "@thirdweb-dev/react";
 import Logo from './SVG/Logo'; // Update path as per your project structure
-
+import Link from "next/link";
 const Navbar = () => {
     return (
         <header className="bg-transparent bg-opacity-100 backdrop-filter backdrop-blur-lg   rounded-b-lg p-4">
@@ -26,13 +26,13 @@ const Navbar = () => {
          
             {/* Logo and DEX Swap Title */}
             <div className="flex items-center space-x-4">
-              <a href="/" className="flex items-center space-x-2 transition duration-300 ease-in-out transform hover:scale-110">
+              <Link href="/" className="flex items-center space-x-2 transition duration-300 ease-in-out transform hover:scale-110">
                 <div className="w-10 h-10">
                   <Logo /> {/* Adjust width and height as needed */}
                 </div>
                 <span className="text-xl font-bold text-gray-100">DEX Swap</span>
                 
-              </a>
+              </Link>
               <span className=" px-5 space-x-30 text-balance font-sans text-gray-100 transition-colors transform hover:text-red-600 rounded-br-md">Home</span>
               <span className=" px-2 space-x-30 text-balance font-sans text-gray-100 transition-colors transform hover:text-red-600 rounded-br-md">Swap</span>
               <span className=" px-3 space-x-32 text-balance font-sans text-gray-100 transition-colors transform hover:text-red-600 rounded-br-md">About Us</span>

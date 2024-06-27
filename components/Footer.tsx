@@ -3,7 +3,7 @@ import Twitter from "./SVG/Twitter";
 import Facebook from "./SVG/Facebook";
 import Insta from "./SVG/Insta";
 import Logo from "./SVG/Logo";
-
+import Link from "next/link";
 //import {Twitter, Facebook, Insta, Logo} from "./index";
 
 const Footer = () => {
@@ -14,7 +14,7 @@ const Footer = () => {
     <footer className="px-4 divide-y bg-opacity-60 bg-black backdrop-filter backdrop-blur-lg text-gray-100 rounded-lg">
       <div className="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
         <div className="lg:w-1/3">
-          <a
+          <Link
             rel="noopener noreferrer"
             href="#"
             className="flex justify-center space-x-3 lg:justify-start"
@@ -25,7 +25,7 @@ const Footer = () => {
             <span className="self-center text-2xl font-semibold text-gray-50">
               DEX Swap
             </span>
-          </a>
+          </Link>
         </div>
         <div className="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-2/3 sm:grid-cols-4">
           <div className="space-y-3">
@@ -33,9 +33,9 @@ const Footer = () => {
             <ul className="space-y-1 text-gray-50">
               {footerMenu2.map((menu, i) => (
                 <li key={i + 1}>
-                  <a rel="noopener noreferrer" href="#">
+                  <Link rel="noopener noreferrer" href="#">
                     {menu}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -45,9 +45,9 @@ const Footer = () => {
             <ul className="space-y-1 text-gray-50">
               {["Privacy", "Terms of Service"].map((menu, i) => (
                 <li key={i + 1}>
-                  <a rel="noopener noreferrer" href="#">
+                  <Link rel="noopener noreferrer" href="#">
                     {menu}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -57,9 +57,9 @@ const Footer = () => {
             <ul className="space-y-1 text-gray-50">
               {["Public API", "Documentation", "Guides"].map((menu, i) => (
                 <li key={i + 1}>
-                  <a rel="noopener noreferrer" href="#">
+                  <Link rel="noopener noreferrer" href="#">
                     {menu}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -67,30 +67,30 @@ const Footer = () => {
           <div className="space-y-3">
             <div className="tracking-widest uppercase text-[#7765F3]">Social Media</div>
             <div className="flex justify-start space-x-3 text-gray-50">
-              <a
+              <Link
                 rel="noopener noreferrer"
                 href="#"
                 title="Facebook"
                 className="flex items-center p-1 hover:text-gray-300"
               >
                 <Facebook />
-              </a>
-              <a
+              </Link>
+              <Link
                 rel="noopener noreferrer"
                 href="#"
                 title="Twitter"
                 className="flex items-center p-1 hover:text-gray-300"
               >
                 <Twitter />
-              </a>
-              <a
+              </Link>
+              <Link
                 rel="noopener noreferrer"
                 href="#"
                 title="Instagram"
                 className="flex items-center p-1 hover:text-gray-300"
               >
                 <Insta />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
