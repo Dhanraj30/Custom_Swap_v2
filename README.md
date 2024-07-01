@@ -2,6 +2,9 @@
 
 ![alt text](https://github.com/Dhanraj30/Custom_Swap_v2/blob/main/img/Screenshot%20(187).png)
 
+# System Daigram (AMM)
+![alt text](https://github.com/Dhanraj30/Custom_Swap_v2/blob/main/img/Screenshot%20(188).png)
+
 ## Introduction
 **DEX Swap** is a decentralized exchange platform designed to facilitate the swapping of tokens in a trustless and permissionless manner. Leveraging the power of Ethereum and automated market maker (AMM) technology, DEX Swap enables users to trade ERC-20 tokens directly from their wallets without the need for intermediaries.
 
